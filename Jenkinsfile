@@ -116,9 +116,10 @@ pipeline{
                     }
                 }
                 stage('iOS'){
-                    agent{
-                        label 'MAC_Agent'
-                    }
+                    agent any
+                    //agent{
+                      //  label 'MAC_Agent'
+                    //}
                     stages{
                         stage('Git Checkout'){
                             steps{
