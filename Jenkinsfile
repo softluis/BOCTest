@@ -165,9 +165,9 @@ pipeline{
                                     FAILED_STAGE=env.STAGE_NAME
                                 }
                                 echo "SonarQube Quality Gate"
-                                "timeout(time: 1, unit: 'MINUTES') {"  
-                                    "waitForQualityGate abortPipeline: true"
-                                "}
+                                //timeout(time: 1, unit: 'MINUTES') {  
+                                   // waitForQualityGate abortPipeline: true
+                                //}
                             }
                         }
                         //For this stage use Jenkins Plugins for IBM AppScan and the Jenkins Syntax Generator to grab the resulting code for pipeline
