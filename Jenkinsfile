@@ -126,7 +126,7 @@ pipeline{
                                     FAILED_STAGE=env.STAGE_NAME
                                 }
                                 echo "Checking out git repo on ---- ${NODE_NAME}"
-                                checkout scm
+                                //checkout scm
                             }
                         }
                         stage('Build'){
