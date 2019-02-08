@@ -154,7 +154,7 @@ pipeline{
                                 }
                                 echo "SonarQube analysis"
                                 withSonarQubeEnv('SonarServer') {
-                                    echo "sh "\"${scannerHome}/bin/sonar-scanner\"""
+                                    echo 'sh "\"${scannerHome}/bin/sonar-scanner\""'
                                 }
                                 sleep 5
                             }
